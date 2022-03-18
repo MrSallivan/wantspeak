@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  		// .social__link
+		&__link {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      &:not(:last-child){
+      margin-right: 10px;
+    }
+      // .social__link_sm
+			&_sm {
+        background-image:url('../../img/svg/sn_mail.svg');
+        background-position: 50% 50%;
+        background-size: 100% auto;
+      }
+		}
+		// .social__svg
+		&__svg {
+      fill: var(--light-color);
+		}
+}
