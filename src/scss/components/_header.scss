@@ -1,6 +1,83 @@
-.header{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 30px;
+		// .header__container
+		&__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+		}
+		// .header__nav
+		&__nav {
+		}
+		// .header__social
+		&__social {
+		}
+    //.header__logo
+    .logo{
+
+    }
 }
+.logo {
+  color:var(--light-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 160%;
+}
+
+.nav {
+		// .nav__list
+		&__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+		}
+		// .nav__item
+		&__item {
+      &:not(:last-child){
+        margin-right: 40px;
+      }
+		}
+		// .nav__link
+		&__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--light-color);
+
+		}
+}
+.list-reset {
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  		// .social__link
+		&__link {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      &:not(:last-child){
+      margin-right: 10px;
+    }
+      // .social__link_sm
+			&_sm {
+        background-image:url('../../img/svg/sn_mail.svg');
+        background-position: 50% 50%;
+        background-size: 100% auto;
+      }
+		}
+		// .social__svg
+		&__svg {
+      fill: var(--light-color);
+		}
+}
+
