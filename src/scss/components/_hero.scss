@@ -1,4 +1,86 @@
 .hero {
-  min-height: 500px;
+  padding-top: 250px;
+  min-height: 800px;
   background-color: var(--dark-color);
+  // .hero__container
+  &__container {
+    @include flex;
+  }
+  //.hero__image
+  &__image {
+    transform: translateX(167px);
+  }
+  // .hero__content
+  &__content {
+    max-width: 516px;
+    flex-shrink: 0;
+  }
+  // .hero__title
+  &__title {
+    margin: 0;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: var(--light-color);
+  }
+  // .hero__maintitle
+  &__maintitle {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    color: var(--light-color);
+
+    // .hero__container
+  }
+  // .hero__subtitle
+  &__subtitle {
+    margin-bottom: 50px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--light-color);
+  }
+  // .hero__link
+  &__link {
+    margin-bottom: 50px;
+  }
+}
+
+.blockquote-8 {
+  position: relative;
+  padding: 16px 24px;
+  margin: 16px 46px;
+  font-size: 16px;
+  text-align: center;
+}
+.blockquote-8:before,
+.blockquote-8:after {
+  position: absolute;
+  color: red;
+  font-size: 100px;
+  font-family: Times, sans-serif;
+  line-height: 100px;
+}
+.blockquote-8:before {
+  content: "“";
+  left: -30px;
+  top: -10px;
+}
+.blockquote-8:after {
+  content: "”";
+  right: -30px;
+  bottom: -10px;
+}
+.blockquote-8 cite {
+  color: red;
+  font-size: 15px;
+  padding-top: 10px;
+  display: block;
 }
