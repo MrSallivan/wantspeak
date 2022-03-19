@@ -1,20 +1,33 @@
 .why {
-		// .why__container
-		&__container {
-		}
+	
+  font-weight: 400;
+font-size: 20px;
+
+		
 		// .why__title
 		&__title {
-		}
+			 
+				margin: 100px 0 50px 0;
+			}
 		// .why__content
 		&__content {
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       grid-template-rows: repeat(10, 1fr);
-      justify-items: center;
-      align-items: center;
-        font-weight: 400;
-  font-size: 20px;
-  line-height: 160%;
+      font-weight: 400;
+  		line-height: 160%;
+		  font-size: 16px;
+			&>div{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+				height: 100%;
+				padding: 20px;
+				
+				span {
+					font-weight: bold;
+				}
+  			}
 		}
 		// .why__item1
 		&__item1 {
@@ -22,6 +35,7 @@
      grid-column-end: 5;
      grid-row-start: 1;
      grid-row-end: 3;
+	  
 		}
 		// .why__item2
 		&__item2 {
