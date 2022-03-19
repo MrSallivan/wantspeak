@@ -9,6 +9,8 @@
 		"dbaeumer.vscode-eslint",
 		"rebornix.project-snippets",
 		"box-of-hats.bemhelper",
-		"diz.ecsstractor-port"
+		"diz.ecsstractor-port",
+		"cbrevik.toggle-format-on-save",
+		"sibiraj-s.vscode-scss-formatter"
 	]
 }

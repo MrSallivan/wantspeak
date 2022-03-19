@@ -57,8 +57,9 @@
   position: relative;
   padding: 16px 24px;
   margin: 16px 46px;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
+  color: var(--light-color);
 }
 .blockquote-8:before,
 .blockquote-8:after {
@@ -80,7 +81,7 @@
 }
 .blockquote-8 cite {
   color: red;
-  font-size: 15px;
+  font-size: 20px;
   padding-top: 10px;
   display: block;
 }
