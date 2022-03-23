@@ -23,6 +23,7 @@
 		// .utility__list
 		&__list {
 			font-size: 20px;
+			margin-bottom: 0;
 			padding: 0;
 			list-style: none;
 		}
@@ -31,7 +32,10 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
-			margin-bottom: 10px;
+			&:not(:last-child){
+
+				margin-bottom: 10px;
+			}
 			&::before{
 				content: '';
 				display: block;
@@ -42,6 +46,4 @@
 			}
 
 		}
-}
-.container {
 }
