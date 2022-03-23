@@ -9,9 +9,12 @@ font-size: 20px;
 			 
 				margin: 100px 0 50px 0;
 			}
+		&__container {
+		}
 		// .why__content
 		&__content {
-      display: grid;
+			display: grid;
+			margin-bottom: 50px;
       grid-template-columns: repeat(10, 1fr);
       grid-template-rows: repeat(10, 1fr);
       font-weight: 400;

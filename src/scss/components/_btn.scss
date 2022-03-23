@@ -11,4 +11,9 @@
   line-height: 160%;
   text-align: center;
   color: var(--light-color);
+  &_why {
+	  display: flex;
+	  max-width: 260px;
+	  margin: 0 auto;
+  }
 }
