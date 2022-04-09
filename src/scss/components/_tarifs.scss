@@ -1,0 +1,59 @@
+.tarifs {
+	background-color: var(--grey-color);
+	padding: 100px 0;
+	// .tarifs__container
+	&__container {}
+
+	// .tarifs__title
+	&__title {
+		font-size: 30px;
+		margin: 0 0 50px 0;
+		text-transform: uppercase;
+	}
+
+	// .tarifs__content
+	&__content {}
+
+	// .tarifs__cards
+	&__cards {}
+
+	// .tarifs__card
+	&__card {}
+
+	// .tarifs__btn-buy
+	&__btn-buy {}
+}
+
+.container {}
+
+.card {
+
+	// .card__title
+	&__title {}
+
+	// .card__advantages
+	&__advantages {}
+
+	// .card__advantage
+	&__advantage {}
+
+	// .card__advantage-img
+	&__advantage-img {}
+
+	// .card__advantage-text
+	&__advantage-text {}
+
+	// .card__price-wrap
+	&__price-wrap {}
+
+	// .card__price
+	&__price {
+
+		// .card__price_cancel
+		&_cancel {}
+	}
+}
+
+.btn {}
+
+.btn-reset {}
