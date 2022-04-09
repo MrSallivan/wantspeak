@@ -24,24 +24,49 @@
 	&__btn-buy {}
 }
 
-.container {}
-
 .card {
-
+	width: 360px;
+	min-height: 460px;
+	border: 1px solid rgba(20, 16, 36, 0.2);
+	border-radius: 20px;
 	// .card__title
-	&__title {}
+	&__title {
+		margin: 40px 0 0 0;
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 1.6;	
+		text-align: center;
+		color: #141024;
+	}
 
 	// .card__advantages
 	&__advantages {}
 
 	// .card__advantage
-	&__advantage {}
+	&__advantage {
+		display: flex;
+	}
 
 	// .card__advantage-img
-	&__advantage-img {}
+	&__advantage-img {
+		width: 60px;
+		height: 60px;
+			
+
+		img {
+			max-width: 100%;
+			width: 80px;
+			height: 100%;
+			object-fit: fill;
+		}
+	}
 
 	// .card__advantage-text
-	&__advantage-text {}
+	&__advantage-text {
+		font-weight: 400;
+		font-size: 18px;
+		text-align: center;
+	}
 
 	// .card__price-wrap
 	&__price-wrap {}
