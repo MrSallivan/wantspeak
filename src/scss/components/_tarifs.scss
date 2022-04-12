@@ -1,6 +1,7 @@
 .tarifs {
 	background-color: var(--grey-color);
 	padding: 100px 0;
+	color: #141024;
 	// .tarifs__container
 	&__container {}
 
@@ -18,7 +19,7 @@
 	&__cards {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		
+		gap: 30px;
 	}
 	// .tarifs__card
 	&__card {}
@@ -41,6 +42,14 @@
 	font-size: 14px;
 	padding: 0 5px;
 	padding-bottom: 10px;
+
+	&:hover{
+		background-color: var(--dark-color);
+		color: var(--light-color);
+		transform: scale(1.05);
+		transition: transform 0.3s ease-in-out;
+		
+	}	
 	// .card__title
 	&__title {
 		margin: 40px 0 40px 0;
@@ -48,7 +57,7 @@
 		font-size: 22px;
 		line-height: 1.6;	
 		text-align: center;
-		color: #141024;
+		
 	}
 
 	// .card__advantages
