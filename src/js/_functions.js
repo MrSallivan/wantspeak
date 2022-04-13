@@ -29,7 +29,7 @@ console.log(mobileCheck())
 // Реализация включения скролла (не забудьте вызвать функцию)
 // import { enableScroll } from './functions/disable-scroll';
 
-Реализация модального окна
+//Реализация модального окна
 import GraphModal from 'graph-modal';
 const modal = new GraphModal();
 

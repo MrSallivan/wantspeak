@@ -27,6 +27,10 @@
   font-weight: 700;
   font-size: 30px;
   line-height: 160%;
+
+  @media (max-width:1024px) {
+	  font-size: 28px;
+  }
 }
 
 .nav {
@@ -44,14 +48,16 @@
 		}
 		// .nav__link
 		&__link {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 160%;
-    color: var(--light-color);
+    	font-style: normal;
+    	font-weight: 400;
+    	font-size: 20px;
+    	line-height: 160%;
+    	color: var(--light-color);
 
+		@media (max-width:1024px) {
+			font-size: 18px;
+		}
 		}
 }
-.list-reset {
-}
+
 

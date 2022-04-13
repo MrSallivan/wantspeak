@@ -115,6 +115,7 @@ a {
 .container-fluid {
   margin: 0 auto;
   max-width: var(--container-fluid-width);
+	padding: 0 var(--container-offset);
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
