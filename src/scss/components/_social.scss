@@ -23,5 +23,9 @@
 			width: 100%;
 			height: 100%;
       	fill: var(--light-color);
+
+			&:hover{
+				fill: var(--accent-color);
+			}
 		}
 }
