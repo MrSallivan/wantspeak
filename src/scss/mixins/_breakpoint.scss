@@ -19,6 +19,12 @@
 }
 
 @mixin small-tablet {
+  @media (max-width: (820px)) {
+    @content;
+  }
+}
+
+@mixin usmall-tablet {
   @media (max-width: (768px)) {
     @content;
   }

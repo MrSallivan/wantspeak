@@ -2,15 +2,20 @@
   <div class="container-fluid header__container">
     <a href="#" class="logo header__logo">Хочу говорить!</a>
     <nav class="nav header__nav" title="Главное меню">
-      <ul class="list-reset nav__list">
+      <ul class="list-reset nav__list" data-menu>
         <li class="nav__item"><a href="#about" class="nav__link" data-scroll>Обо мне</a></li>
         <li class="nav__item"><a href="#who" class="nav__link" data-scroll>Для кого</a></li>
         <li class="nav__item"><a href="#why" class="nav__link" data-scroll>Для чего</a></li>
         <li class="nav__item"><a href="#price" class="nav__link" data-scroll>Стоимость</a></li>
       </ul>
-    </nav>
-    <div class="social header__social">
-      <a class="social__link" href="#">
+		<a class="call nav__call" href="tel:+88002001010">
+			<svg class="call__svg">
+				<use xlink:href="img/sprite.svg#call"></use>
+			</svg>
+		</a>
+	</nav>
+	<div class="social header__social">
+		<a class="social__link" href="#">
 			<svg class="social__svg">
 				<use xlink:href="img/sprite.svg#insta"></use>
 			</svg>
@@ -25,6 +30,9 @@
 				<use xlink:href="img/sprite.svg#mail"></use>
 			</svg>
 		</a>
-    </div>
+	</div>
+	<button class="burger nav__burger btn-reset" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+	  <span class="burger__line"></span>
+	</button>
   </div>
 </header>
