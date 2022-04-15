@@ -11,9 +11,7 @@
 	cursor: pointer;
 	border-style: outset;
 
-	@media (max-width: 650px){
-		display: block;
-	}
+	
 
 	&:hover::after,
 	&:hover::before,
@@ -94,9 +92,13 @@
 	mix-blend-mode: normal;
 	opacity: 1;
 	border-radius: 10px;
+	border-color: #b2b2b2;
 	cursor: pointer;
 	border-style: outset;
 	
+	@media (max-width: 650px){
+		display: flex;
+	}
 
 	&__svg {
 		display: block;

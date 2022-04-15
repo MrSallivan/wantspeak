@@ -21,6 +21,13 @@
     .logo{
 
     }
+	 &__burger{
+		display: none;
+
+		@media (max-width:650px) {
+			display: flex;
+		}
+	 }
 }
 .logo {
   color:var(--light-color);
@@ -38,15 +45,29 @@
 	@include small-tablet {
 		font-size: 20px;
 	}
- 
+	@media (max-width:650px) {
+		font-size: 24px;
+	}
+	@include mobile-mini {
+		font-size: 18px;
+	}
 }
 
 .nav {
+		
+
 		// .nav__list
 		&__list {
       display: flex;
       align-items: center;
       justify-content: center;
+
+		@media (max-width:650px){
+			width: 100%;
+			height: 100%;
+			flex-direction: column;
+		}
+
 		}
 		// .nav__item
 		&__item {
@@ -58,7 +79,15 @@
 				margin-right: 20px;
 				}
 			}
+		@media (max-width:650px) {
+			&:not(:last-child){
+				margin-right: 0;
+			}
+			margin: 20px 0;
+			
+			}
 		}
+	
 		// .nav__link
 		&__link {
     	font-style: normal;
@@ -66,7 +95,15 @@
     	font-size: 20px;
     	line-height: 160%;
     	color: var(--light-color);
-		
+
+		@media (max-width: 650px) {
+			font-size: 20px;
+			}
+			@include usmall-tablet {
+				font-size: 16px;
+			}
+
+		}
 		&__call{
 			
 		}
@@ -78,18 +115,27 @@
 		@include tablet {
 			font-size: 18px;
 			}
+
 		@include usmall-tablet {
 			font-size: 16px;
 			}
-		@media (max-width: 650px) {
-			display: none;
+
+		@media (max-width: 650px){
+			display: fixed;
+			position: absolute;
+			z-index: 500;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background-color: var(--dark-color);
 		}
 		
 	}
-}
+
 
 .menu--active {
-
+	
 }
 
 
