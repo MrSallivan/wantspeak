@@ -16,4 +16,8 @@
 	  max-width: 260px;
 	  margin: 0 auto;
   }
+
+  @include small-tablet{
+	  padding: 20px 10px;
+  }
 }

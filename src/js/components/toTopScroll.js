@@ -7,7 +7,7 @@ window.onscroll = function () { scrollFunction() };
 mybutton.addEventListener('click', topFunction)
 
 function scrollFunction() {
-	if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+	if (document.body.scrollTop > 640 || document.documentElement.scrollTop > 640) {
 		mybutton.style.display = "block";
 	} else {
 		mybutton.style.display = "none";
