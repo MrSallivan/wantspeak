@@ -1,6 +1,9 @@
 .utility {
 	background-color: var(--grey-color);
 	padding: 100px 0;
+	@include small-tablet {
+		padding: 50px 0;
+	}
 		// .utility__container
 		&__container {
 		}
@@ -14,6 +17,12 @@
 			font-size: 20px;
 			font-weight: 400;
 			line-height: 160%;
+			@include small-tablet {
+				font-size: 18px;
+			}
+			@include mobile {
+				font-size: 16px;
+			}
 
 		}
 		// .utility__list-caption
@@ -33,7 +42,6 @@
 			align-items: center;
 			justify-content: flex-start;
 			&:not(:last-child){
-
 				margin-bottom: 10px;
 			}
 			&::before{
@@ -43,6 +51,13 @@
 				width: 30px;
 				height: 30px;
 				background: url(../../img/icon.svg) 0 0/cover no-repeat;
+			}
+
+			@include mobile {
+				font-size: 18px;
+			}
+			@include mobile-mini {
+				font-size: 14px;
 			}
 
 		}
