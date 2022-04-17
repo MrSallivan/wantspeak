@@ -2,8 +2,12 @@
   background-color: var(--grey-color);
   padding: 100px 0;
   font-weight: 400;
-font-size: 20px;
-line-height: 160%;
+	font-size: 20px;
+	line-height: 160%;
+
+	@include small-tablet {
+		padding: 50px 0;
+	}
 		
 		// .who__title
 		&__title {
@@ -20,6 +24,9 @@ line-height: 160%;
       &:not(:last-child){
         margin-bottom: 15px;
       }
+		@include mobile {
+			flex-direction: column;
+			}
 		}
     //.who__item-image
     &__item-image{
@@ -27,6 +34,11 @@ line-height: 160%;
       flex: 0 0 20%;
       margin: 0 50px 0 0;
       min-height: 150px;
+
+		@include mobile {
+			width: 100%;
+			margin: 0;
+		}
     }
 		// .who__img
 		&__img {
@@ -40,6 +52,14 @@ line-height: 160%;
 		}
 		// .who__text
 		&__text {
+			@media (max-width: 700px) {
+				font-size: 16px;
+				
+			}
+			@include mobile {
+				text-align: center;
+			}
+			
 		}
-}
+	}
 

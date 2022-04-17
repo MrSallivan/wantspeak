@@ -39,9 +39,9 @@
 	 @media (max-width: 1140px) {
 		 align-self: flex-end;
 	 }
-	@include small-tablet {
-		display: none;
-	}
+	// @include small-tablet {
+	
+	// }
 	
   }
   // .hero__content
@@ -112,7 +112,18 @@
   // .hero__link
   &__link {
     margin-bottom: 50px;
+
+	@include small-tablet {
+		min-width: 500px;
+	}
+	@media (max-width: 550px) {
+		min-width: 350px;
+	}
+	@include mobile-mini {
+		min-width: 260px;
+	}
   }
+
 }
 
 .blockquote-8 {
