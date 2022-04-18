@@ -36,6 +36,7 @@
 	// .form__content-sale
 	&__content-sale {
 		margin-right: 10px;
+
 		@include mobile {
 			margin-right: 0;
 		}
@@ -69,11 +70,7 @@
 		}
 	}
 
-	// .form__content-form
-	&__content-form {}
 
-	// .form__form-body
-	&__form-body {}
 }
 
 .form-body {
