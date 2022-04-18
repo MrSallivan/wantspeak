@@ -8,6 +8,12 @@
 	&__content {
 		display: flex;
 		justify-content: space-between;
+
+		@include mobile{
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+		}
 	}
 }
 

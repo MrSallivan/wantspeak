@@ -4,11 +4,13 @@
 	@include small-tablet {
 		padding: 50px 0;
 	}
+
 	// .lessons__title
 	&__title {
 		font-size: 30px;
 		margin: 0 0 50px 0;
 	}
+
 	// .lessons__item
 	&__item {
 		display: flex;
@@ -27,11 +29,21 @@
 	// .lesson__item-caption
 	&__item-caption {
 		margin-top: 0;
+
+		@include mobile-mini {
+			font-size: 20px;
+		}
 	}
 
 	// .lessons__item-left
 	&__item-left {
 		margin-right: 20px;
+	}
+
+	&__text {
+		@include mobile-mini {
+			font-size: 16px;
+		}
 	}
 }
 
