@@ -2,17 +2,44 @@
 	color: var(--light-color);
 	background-color: var(--accent-color);
 	padding: 100px 0;
-	// .form__container
-	
+	background-image: url("../../img/fon_form.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100% 20%;
+
+	@include small-tablet {
+		padding: 50px 0;
+	}
+
+	@include mobile {
+		background-image: none;
+	}
+
 	// .form__content
 	&__content {
 		display: flex;
 		justify-content: space-between;
 		padding: 0 30px;
+
+		@include small-tablet {
+			padding: 0;
+		}
+
+		@include mobile {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+		}
 	}
 
 	// .form__content-sale
-	&__content-sale {}
+	&__content-sale {
+		margin-right: 10px;
+		@include mobile {
+			margin-right: 0;
+		}
+	}
 
 	// .form__content-title
 	&__content-title {
@@ -21,10 +48,26 @@
 		line-height: 130%;
 		color: #fff;
 		margin: 0;
+
+		@include small-tablet {
+			font-size: 34px;
+		}
+
+		@include mobile {
+			text-align: center;
+		}
 	}
 
 	// .form__content-text
-	&__content-text {}
+	&__content-text {
+		@include small-tablet {
+			font-size: 14px;
+		}
+
+		@include mobile {
+			text-align: center;
+		}
+	}
 
 	// .form__content-form
 	&__content-form {}
@@ -35,6 +78,16 @@
 
 .form-body {
 	min-width: 500px;
+
+	@include small-tablet {
+		min-width: unset;
+		max-width: 500px;
+	}
+
+	@include mobile {
+		min-width: unset;
+		max-width: 500px;
+	}
 
 	// .form-body__input
 	&__input {
@@ -51,16 +104,20 @@
 			border: none;
 		}
 	}
-	
+
 
 	// .form-body__span
 	&__span {
 		font-size: 10px;
 	}
-	&__btn{
+
+	&__btn {
 		background-color: var(--dark-color);
 		width: 100%;
 		height: 44px;
+
+		@include mobile {
+			margin-bottom: 10px;
+		}
 	}
 }
-

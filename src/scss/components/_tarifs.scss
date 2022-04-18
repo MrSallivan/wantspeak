@@ -3,6 +3,10 @@
 	padding: 100px 0;
 	color: #141024;
 
+	@include small-tablet {
+		padding: 50px 0;
+	}
+
 	// .tarifs__title
 	&__title {
 		font-size: 30px;
