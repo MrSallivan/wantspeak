@@ -1,5 +1,5 @@
 .burger {
-	display: none;
+	display: block;
 	position: relative;
 	margin-left: 10px;
 	width: 44px;
@@ -10,9 +10,7 @@
 	border-radius: 10px;
 	cursor: pointer;
 	border-style: outset;
-
 	
-
 	&:hover::after,
 	&:hover::before,
 	&:hover &__line {
@@ -111,3 +109,22 @@
 		}
 	}
 }
+.burger-close{
+	display: none;
+	position: absolute;
+	right: var(--container-offset);
+	top: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 10px;
+	width: 44px;
+	height: 44px;
+	background-image: url("../img/close.svg");
+	background-position: center;
+	background-size: 12px 12px;
+	background-repeat: no-repeat;
+	
+	@media (max-width: 650px){
+		display: block;
+	}
+}
+

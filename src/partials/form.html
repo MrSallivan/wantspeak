@@ -6,7 +6,8 @@
 				<p class="form__content-text">Акция действительна до <span class="form__content-time"></span></p>
 			</div>
 			<div class="form__content-form">
-				<form class="form__form-body form-body" action="#" method="post">
+				<form class="form__form-body form-body" enctype="multipart/form-data" action="mail.php" method="post">
+					<input type="hidden" name="admin_email[]" value="alexnikolaenko@yandex.ru">
 					<div class="form-body__input">
 						<input type="tel" name="tel" id="tel" placeholder="Телефон">
 					</div>

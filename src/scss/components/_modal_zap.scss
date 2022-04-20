@@ -1,5 +1,5 @@
 .graph-modal {
-	
+
 	// .graph-modal__container
 	&__container {
 		background-color: rgb(240, 93, 93);
@@ -8,36 +8,10 @@
 	// .graph-modal__close
 	&__close {
 		font-size: 12px;
-		color:#141024;
+		color: #141024;
 		top: 0px;
 		right: 30px;
 	}
 
-	// .graph-modal__content
-	&__content {}
 }
 
-.btn-reset {}
-
-.form {
-
-	// .form__content-form
-	&__content-form {}
-
-	// .form__form-body
-	&__form-body {}
-}
-
-.form-body {
-
-	// .form-body__input
-	&__input {}
-
-	// .form-body__btn
-	&__btn {}
-
-	// .form-body__span
-	&__span {}
-}
-
-.btn {}

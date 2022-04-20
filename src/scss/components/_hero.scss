@@ -1,87 +1,177 @@
 .hero {
-  padding-top: 250px;
-  min-height: 800px;
-  background-color: var(--dark-color);
-  // .hero__container
-  &__container {
-    @include flex;
-  }
-  //.hero__image
-  &__image {
-    transform: translateX(167px);
-  }
-  // .hero__content
-  &__content {
-    max-width: 516px;
-    flex-shrink: 0;
-  }
-  // .hero__title
-  &__title {
-    margin: 0;
-    font-family: "Jost";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 160%;
-    text-transform: uppercase;
-    color: var(--light-color);
-  }
-  // .hero__maintitle
-  &__maintitle {
-    font-family: "Jost";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 160%;
-    color: var(--light-color);
+	padding-top: 250px;
+	min-height: 800px;
+	background-color: var(--dark-color);
 
-    // .hero__container
-  }
-  // .hero__subtitle
-  &__subtitle {
-    margin-bottom: 50px;
-    font-family: "Jost";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 160%;
-    color: var(--light-color);
-  }
-  // .hero__link
-  &__link {
-    margin-bottom: 50px;
-  }
+	@media (max-width: 1140px) {
+		padding-top: 200px;
+	}
+
+	@include tablet {
+		padding-top: 150px;
+		min-height: 600px;
+	}
+
+	// .hero__container
+	&__container {
+		@include flex;
+
+		@include small-tablet {
+			align-content: center;
+			padding-bottom: 50px;
+		}
+
+	}
+
+
+	//.hero__image
+	&__image {
+
+		transform: translateX(167px);
+		margin-bottom: -4px;
+
+		@include big-desktop {
+			transform: translateX(80px);
+		}
+
+		@media (max-width: 1340px) {
+			transform: translateX(10px);
+		}
+
+		@media (max-width: 1140px) {
+			align-self: flex-end;
+		}
+
+		// @include small-tablet {
+
+		// }
+
+	}
+
+	// .hero__content
+	&__content {
+		max-width: 516px;
+		flex-shrink: 0;
+
+		@include tablet {
+			max-width: 380px;
+		}
+
+		@include small-tablet {
+			max-width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+	}
+
+	// .hero__title
+	&__title {
+		margin: 0;
+		font-family: "Jost";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 60px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: var(--light-color);
+
+		@include tablet {
+			font-size: 38px;
+		}
+
+		@media (max-width: 355px) {
+			font-size: 34px;
+		}
+	}
+
+	// .hero__maintitle
+	&__maintitle {
+		font-family: "Jost";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 160%;
+		color: var(--light-color);
+
+		@include tablet {
+			font-size: 18px;
+		}
+	}
+
+	// .hero__subtitle
+	&__subtitle {
+		margin-bottom: 50px;
+		font-family: "Jost";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 160%;
+		color: var(--light-color);
+
+		@include tablet {
+			margin-bottom: 30px;
+		}
+
+		@include small-tablet {
+			margin-bottom: 60px;
+		}
+	}
+
+	// .hero__link
+	&__link {
+		margin-bottom: 50px;
+
+		@include small-tablet {
+			min-width: 500px;
+		}
+
+		@media (max-width: 550px) {
+			min-width: 350px;
+		}
+
+		@include mobile-mini {
+			min-width: 260px;
+		}
+	}
+
 }
 
 .blockquote-8 {
-  position: relative;
-  padding: 16px 24px;
-  margin: 16px 46px;
-  font-size: 18px;
-  text-align: center;
-  color: var(--light-color);
+	position: relative;
+	padding: 16px 24px;
+	margin: 16px 46px;
+	font-size: 18px;
+	text-align: center;
+	color: var(--light-color);
 }
+
 .blockquote-8:before,
 .blockquote-8:after {
-  position: absolute;
-  color: red;
-  font-size: 100px;
-  font-family: Times, sans-serif;
-  line-height: 100px;
+	position: absolute;
+	color: red;
+	font-size: 100px;
+	font-family: Times, sans-serif;
+	line-height: 100px;
 }
+
 .blockquote-8:before {
-  content: "“";
-  left: -30px;
-  top: -10px;
+	content: "“";
+	left: -30px;
+	top: -10px;
 }
+
 .blockquote-8:after {
-  content: "”";
-  right: -30px;
-  bottom: -10px;
+	content: "”";
+	right: -30px;
+	bottom: -10px;
 }
+
 .blockquote-8 cite {
-  color: red;
-  font-size: 20px;
-  padding-top: 10px;
-  display: block;
+	color: red;
+	font-size: 20px;
+	padding-top: 10px;
+	display: block;
 }
