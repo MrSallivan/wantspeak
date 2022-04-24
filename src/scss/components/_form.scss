@@ -88,8 +88,11 @@
 
 	// .form-body__input
 	&__input {
+		// display: flex;
+		// flex-direction: column-reverse;
+		position: relative;
 		width: 100%;
-		height: 44px;
+		height: 44px; //44
 		margin-bottom: 15px;
 
 		input {
@@ -100,8 +103,14 @@
 			outline: none;
 			border: none;
 		}
-	}
 
+		.just-validate-error-label {
+			position: absolute;
+			top: 22px;
+			right: 10px;
+			color: var(--accent-color) !important;
+		}
+	}
 
 	// .form-body__span
 	&__span {
@@ -117,4 +126,8 @@
 			margin-bottom: 10px;
 		}
 	}
+}
+
+.just-validate-error-label {
+	color: #fff;
 }
